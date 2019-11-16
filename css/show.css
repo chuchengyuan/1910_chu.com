@@ -1,0 +1,718 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100%;
+  height: 33px;
+  background-color: #474747;
+  position: relative;
+}
+
+.box .hidd {
+  width: 350px;
+  height: 106px;
+  background-color: #fff;
+  position: absolute;
+  top: 33px;
+  right: 0;
+  z-index: 3;
+  box-shadow: 3px 3px 10px #ccc;
+  display: none;
+}
+
+.box .hidd p {
+  text-align: center;
+  line-height: 106px;
+  display: block;
+  color: #ccc;
+}
+
+.box .wrapper {
+  width: 1190px;
+  height: 33px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.box .box1 span {
+  line-height: 33px;
+  float: left;
+  font-size: 12px;
+  font-family: "Microsoft YaHei", Verdana, Geneva, sans-serif, \5b8b\4f53;
+  color: #ccc;
+}
+
+.box .box2 {
+  float: left;
+  position: relative;
+  left: 650px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 33px;
+  color: #ccc;
+}
+
+.box .box2 span a {
+  color: #ccc;
+}
+
+.box .box2 b {
+  font-weight: normal;
+}
+
+.box .box2 b a {
+  color: #ccc;
+}
+
+.box .box3 {
+  float: left;
+  position: relative;
+  left: 700px;
+  font-size: 12px;
+  line-height: 33px;
+  color: #ccc;
+}
+
+.box .box3 strong {
+  font-weight: normal;
+}
+
+.box .box3 strong a {
+  color: #ccc;
+  list-style: none;
+}
+
+.box .box3 b {
+  font-weight: normal;
+}
+
+.box .box3 b a {
+  color: #ccc;
+}
+
+.box .box4 {
+  float: right;
+  width: 133px;
+  height: 33px;
+  background-color: #1e1e1e;
+  position: relative;
+  z-index: 2;
+}
+
+.box .box4 a {
+  text-decoration: none;
+  text-align: center;
+  line-height: 33px;
+  color: #666666;
+  font-size: 12px;
+  font-family: "Microsoft YaHei", Verdana, Geneva, sans-serif, \5b8b\4f53;
+  display: block;
+}
+
+.box .box4 a .right {
+  color: red;
+  font-weight: normal;
+}
+
+.box .box4 a .sp {
+  color: #ac1717;
+  font-size: 15px;
+  padding-right: 5px;
+}
+
+.box .box2 span:hover a {
+  color: #fff;
+}
+
+.box .box2 b:hover a {
+  color: #fff;
+}
+
+.box .box3 strong:hover a {
+  color: #fff;
+}
+
+.box .box3 b:hover a {
+  color: #fff;
+}
+
+.box .box4:hover .hidd {
+  display: block;
+}
+
+.box .box4:hover a {
+  background-color: #f05050;
+  color: #fff;
+}
+
+.box .box4:hover a .sp {
+  color: #f39090;
+}
+
+.box .box4:hover a .right {
+  color: #fff;
+}
+
+.box .lis {
+  height: 104px;
+  background-color: #fff;
+  position: relative;
+}
+
+.box .lis .wrapper1 {
+  width: 1190px;
+  height: 101px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.box .lis .wrapper1 .ig1 {
+  float: left;
+  width: 183px;
+  height: 101px;
+  background-color: #c20315;
+  text-align: center;
+  line-height: 101px;
+}
+
+.box .lis .wrapper1 .ig1 img {
+  text-align: center;
+}
+
+.box .lis .wrapper1 .p1 {
+  line-height: 101px;
+  float: left;
+  margin-left: 50px;
+}
+
+.box .lis .wrapper1 .p2 ul {
+  float: right;
+  line-height: 101px;
+  margin-right: 390px;
+}
+
+.box .lis .wrapper1 .p2 ul li {
+  float: left;
+  margin-left: 25px;
+}
+
+.box .lis .wrapper1 .p2 ul li a {
+  font-size: 15px;
+  color: black;
+}
+
+.box .lis .wrapper1 .p3 form {
+  position: absolute;
+  right: 200px;
+}
+
+.box .lis .wrapper1 .p4 {
+  position: relative;
+}
+
+.box .lis .wrapper1 .p4 .nav1 {
+  width: 170px;
+  height: 200px;
+  margin-top: 30px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px #ccc;
+  position: absolute;
+  top: 75px;
+  left: 309px;
+  display: none;
+  z-index: 22;
+}
+
+.box .lis .wrapper1 .p4 .nav1 li {
+  margin-left: 35px;
+  line-height: 40px;
+}
+
+.box .lis .wrapper1 .p4 .nav1 li a {
+  text-decoration: none;
+  color: #474747;
+}
+
+.box .lis .wrapper1 .p4 .pp4 {
+  width: 170px;
+  height: 101px;
+  float: left;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.box .lis .wrapper1 .p4 span {
+  color: #ec3737;
+  position: absolute;
+  left: 348px;
+  top: 47px;
+}
+
+.box .lis .wrapper1 .p4 p {
+  line-height: 101px;
+  float: left;
+  margin-left: 60px;
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.box .lis .wrapper1 .p4 p a {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.box .lis .p3 form {
+  line-height: 101px;
+}
+
+.box .lis .p3 form .tap {
+  width: 274px;
+  height: 41px;
+  outline: none;
+  padding-left: 20px;
+  font-size: 12px;
+  margin-right: 18px;
+}
+
+.box .lis .p3 form .inp {
+  width: 46px;
+  height: 41px;
+  background-color: #c20315;
+  border: 0;
+  outline: none;
+  position: absolute;
+  right: -27.5px;
+  top: 30px;
+}
+
+.box .lis .p3 form span {
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  right: -18px;
+  top: 38px;
+}
+
+.box .bom {
+  width: 100%;
+  height: 3px;
+  background-color: #ff2525;
+  position: absolute;
+  top: 134px;
+}
+
+.box .p4 .pp4:hover {
+  background-color: #e21515;
+}
+
+.box .p4 .pp4:hover .nav1 {
+  display: block;
+}
+
+.box .p4 .pp4:hover span {
+  color: #fff;
+}
+
+.box .p4 .pp4:hover p a {
+  color: #fff;
+}
+
+.box .p4 .pp4:hover li a {
+  color: red;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: -8px;
+}
+
+.right1 {
+  width: 35px;
+  height: 100%;
+  background-color: #000;
+  z-index: 1000;
+  position: fixed;
+  right: 0;
+}
+
+.right1 .right-1 {
+  width: 35px;
+  height: 35px;
+  margin-top: 190px;
+}
+
+.right1 .right-1 a {
+  background: url(../img/11.png) no-repeat -228px -74px;
+  width: 35px;
+  height: 18px;
+  text-align: center;
+  margin-left: 8px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.right1 .right-2 {
+  width: 35px;
+  height: 35px;
+  margin-top: 15px;
+}
+
+.right1 .right-2 a {
+  background: url(../img/11.png) no-repeat -228px -42px;
+  display: block;
+  width: 19px;
+  height: 15px;
+  margin-left: 8px;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.right1 .right-3 {
+  display: block;
+}
+
+.right1 .right-3 .right-4 em {
+  width: 26px;
+  height: 2px;
+  background-color: #1e1e1e;
+  display: block;
+  margin-left: 4px;
+  margin-top: 10px;
+}
+
+.right1 .right-3 .right-4 p {
+  background: url(../img/11.png) no-repeat -184px -56px;
+  width: 22px;
+  height: 18px;
+  margin-left: 6px;
+  margin-top: 5px;
+}
+
+.right1 .right-3 .right-4 strong {
+  list-style: none;
+  display: block;
+  font-size: 12px;
+  color: #fff;
+  width: 20px;
+  margin-left: 11px;
+  font-weight: normal;
+}
+
+.right1 .right-3 .right-4 b {
+  display: block;
+  font-weight: normal;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #c21616;
+  display: block;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 23px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.right1 .right-5 {
+  width: 35px;
+  height: 35px;
+  margin-top: 8px;
+}
+
+.right1 .right-5 a {
+  background: url(../img/11.png) no-repeat -228px -57px;
+  width: 18px;
+  height: 16px;
+  margin-left: 8px;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.right1 .right-6 {
+  width: 35px;
+  height: 35px;
+  margin-top: 150px;
+}
+
+.right1 .right-6 a {
+  background: url(../img/11.png) no-repeat -228px -20px;
+  width: 25px;
+  height: 22px;
+  margin-left: 5px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.right1 .nav-1 {
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  background-color: #575252;
+  right: 35px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  top: 190px;
+  display: none;
+}
+
+.right1 .nav-2 {
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  background-color: #575252;
+  right: 35px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  top: 240px;
+  display: none;
+}
+
+.right1 .nav-3 {
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  background-color: #575252;
+  right: 35px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  top: 418px;
+  display: none;
+}
+
+.right1 .right-1:hover {
+  background-color: #d80e0e;
+}
+
+.right1 .right-1:hover .nav-1 {
+  display: block;
+}
+
+.right1 .right-2:hover {
+  background-color: #d80e0e;
+}
+
+.right1 .right-2:hover .nav-2 {
+  display: block;
+}
+
+.right1 .right-3:hover {
+  background-color: #d80e0e;
+}
+
+.right1 .right-3:hover b {
+  background-color: #000;
+}
+
+.right1 .right-3:hover em {
+  background-color: #d80e0e;
+}
+
+.right1 .right-3:hover p {
+  background: url(../img/11.png) no-repeat -190px -99px;
+  width: 32px;
+  height: 20px;
+  margin-left: 6px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.right1 .right-5:hover {
+  background-color: #d80e0e;
+}
+
+.right1 .right-5:hover .nav-3 {
+  display: block;
+}
+
+.right1 .right-6:hover {
+  background-color: #d80e0e;
+}
+
+.photo {
+  width: 100%;
+  display: flex;
+}
+
+.photo .photo-01 {
+  width: 1190px;
+  height: 160px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -14px;
+  z-index: 3;
+}
+
+.photo .photo-01 img {
+  width: 386px;
+  height: 160px;
+  margin: 0 auto;
+}
+
+.photo-01 img:hover {
+  margin-top: -5px;
+  transition: all 1s;
+  box-shadow: 3px 3px 5px #f5f3f3;
+}
+
+.dota-1 {
+  width: 100%;
+  height: 726.5px;
+  background-color: #f5f5f5;
+  margin-top: 40px;
+}
+
+.dota-1 .wrap-1 .title-main {
+  width: 1190px;
+  height: 96.5px;
+  margin: 0 auto;
+}
+
+.dota-1 .wrap-1 .title-main .f-left {
+  float: left;
+  line-height: 96.5px;
+  font-size: 28px;
+  color: #474747;
+}
+
+.dota-1 .wrap-1 .title-main .a-1 {
+  line-height: 96.5px;
+  margin-left: 80px;
+  font-size: 16px;
+  color: #e90303;
+  list-style: none;
+  text-decoration: none;
+  float: left;
+  position: relative;
+}
+
+.dota-1 .wrap-1 .title-main .a-1 p {
+  width: 110px;
+  height: 3px;
+  background-color: #e21818;
+  position: absolute;
+  top: 60px;
+}
+
+.dota-1 .wrap-1 .title-main .a-2 {
+  float: right;
+  text-decoration: none;
+  line-height: 96.5px;
+  font-size: 16px;
+  color: #666;
+  margin-right: 30px;
+  position: relative;
+}
+
+.dota-1 .wrap-1 .title-main .a-2 .gt {
+  width: 20px;
+  height: 20px;
+  background-color: #999;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 38px;
+  left: 38px;
+}
+
+.dota-1 .wrap-1 .title-main .a-2 .gt b {
+  position: absolute;
+  top: -38px;
+  left: 5px;
+}
+
+.dota-1 .title-main .a-2:hover {
+  color: red;
+}
+
+.dota-1 .title-main .a-2:hover .gt {
+  background-color: red;
+}
+
+.dota-2 {
+  width: 1190px;
+  height: 630px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.dota-2 .left-pho {
+  float: left;
+  position: absolute;
+  left: 0;
+}
+
+.dota-2 .main {
+  width: 949px;
+  height: 630px;
+  position: absolute;
+  right: 0;
+}
+
+.img01 img {
+  float: left;
+}
+
+.left-pho:hover img {
+  margin-top: -6px;
+  transition: all 0.5s;
+  box-shadow: 2px 2px 5px #ccc;
+}
+
+.img01:hover img {
+  margin-top: -6px;
+  transition: all 0.5s;
+  box-shadow: 2px 2px 5px #ccc;
+}
+
+.list-1:hover {
+  margin-top: -6px;
+  transition: all 0.5s;
+  box-shadow: 2px 2px 5px #ccc;
+}
+
+.list-1 {
+  width: 226px;
+  height: 300px;
+  background-color: #fff;
+  float: left;
+  text-align: center;
+  padding-top: 47px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.list-1 p {
+  font-size: 14px;
+  margin: 15px 15px 5px 15px;
+  overflow: hidden;
+  max-height: 38px;
+}
+
+.list-1 .p1 {
+  font-size: 18px;
+  color: #eb0303;
+  font-family: Arial;
+}
+
+.list-1 a img {
+  width: 160px;
+  height: 160px;
+}
