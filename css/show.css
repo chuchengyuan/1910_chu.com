@@ -328,8 +328,8 @@
 }
 
 .logo {
+  margin-top: -7.5px;
   display: inline-block;
-  margin-top: -8px;
 }
 
 .right1 {
@@ -572,7 +572,7 @@
 
 .dota-1 {
   width: 100%;
-  height: 726.5px;
+  height: 726px;
   background-color: #f5f5f5;
   margin-top: 40px;
 }
@@ -648,14 +648,15 @@
 .dota-2 {
   width: 1190px;
   height: 630px;
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
 }
 
 .dota-2 .left-pho {
   float: left;
   position: absolute;
   left: 0;
+  margin-right: 15px;
 }
 
 .dota-2 .main {
@@ -667,6 +668,7 @@
 
 .img01 img {
   float: left;
+  margin-right: 15px;
 }
 
 .left-pho:hover img {
@@ -681,10 +683,14 @@
   box-shadow: 2px 2px 5px #ccc;
 }
 
-.list-1:hover {
+.list .list-1:hover {
   margin-top: -6px;
   transition: all 0.5s;
   box-shadow: 2px 2px 5px #ccc;
+}
+
+.list .list-1:hover div :nth-child(3) {
+  margin-left: 0;
 }
 
 .list-1 {
@@ -694,8 +700,7 @@
   float: left;
   text-align: center;
   padding-top: 47px;
-  margin-left: 15px;
-  margin-bottom: 15px;
+  margin: 0 15px 15px 0;
   position: relative;
 }
 
@@ -710,9 +715,509 @@
   font-size: 18px;
   color: #eb0303;
   font-family: Arial;
+  margin: 15px 15px 5px 15px;
 }
 
 .list-1 a img {
   width: 160px;
   height: 160px;
+}
+
+.list :nth-child(3) {
+  margin-left: 0;
+}
+
+.list :nth-child(2) {
+  margin-right: 0;
+}
+
+.list :nth-child(6) {
+  margin-right: 0;
+}
+
+.list-02 {
+  width: 226px;
+  height: 300px;
+  background-color: #fff;
+  float: left;
+  padding-top: 47px;
+  margin: 0 15px 15px 0;
+  text-align: center;
+  position: relative;
+}
+
+.list-02 .yuan {
+  width: 52px;
+  height: 52px;
+  background-color: #ff5353;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  line-height: 52px;
+  box-shadow: 0 1px 3px #CCC;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+.list-02 .yuan span {
+  font-size: 26px;
+  font-family: Arial;
+}
+
+.list-02 .xin {
+  position: absolute;
+  top: 18px;
+  left: 185px;
+  color: #999;
+  font-family: Arial;
+  line-height: 14px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.list-02 .xin span {
+  display: inline-block;
+  width: 13px;
+  height: 11px;
+  overflow: hidden;
+  background: url(../img/11.png) no-repeat -132px 0;
+  vertical-align: middle;
+}
+
+.list-02 .xin font {
+  font-style: normal;
+  color: #999;
+}
+
+.list-02 .pan img {
+  width: 160px;
+  height: 160px;
+  border: 0;
+}
+
+.list-02 .name {
+  font-size: 14px;
+  margin: 15px 15px 5px 15px;
+  max-height: 38px;
+  overflow: hidden;
+  color: #333;
+}
+
+.list-02 .pri-01 {
+  font-size: 18px;
+  color: #eb0303;
+  font-family: Arial;
+}
+
+.list-02 .pri-01 s {
+  display: inline-block;
+  margin-left: 7px;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.add {
+  background: url(../img/rgba1.png);
+  position: absolute;
+  width: 226px;
+  top: 300px;
+  display: none;
+  z-index: 50;
+  float: left;
+}
+
+.add .star {
+  width: 74px;
+  height: 14px;
+  margin: 12px auto;
+  background: url(../img/stars.png) no-repeat 0 0;
+  display: block;
+}
+
+.add .btn {
+  position: relative;
+  left: 53.9px;
+  width: 214px;
+  height: 45px;
+  line-height: 30px;
+  margin: 0 auto 0 -108px;
+  border: 1px solid #FFF;
+  font-size: 16px;
+  color: #FFF;
+  text-align: center;
+  z-index: 100;
+}
+
+.add .btn span {
+  display: inline-block;
+  width: 22px;
+  height: 18px;
+  margin-right: 9px;
+  vertical-align: -3px;
+  background: url(../img/11.png) no-repeat -184px -38px;
+}
+
+.list-02:hover {
+  margin-top: -4px;
+  transition: all 1s;
+  box-shadow: 2px 2px 5px #ccc;
+}
+
+.list-02:hover .add {
+  display: block;
+  position: absolute;
+  top: 210px;
+  transition: all 1s;
+}
+
+.add .btn:hover {
+  background-color: red;
+  color: #FFF;
+}
+
+.list-02:nth-child(4) {
+  margin-right: 0;
+}
+
+.list-02:nth-child(8) {
+  margin-right: 0;
+}
+
+.list-1:nth-child(2) {
+  margin-right: 0;
+}
+
+.list-1:nth-child(6) {
+  margin-right: 0;
+}
+
+.list-1:hover {
+  margin-top: -4px;
+  transition: all 1s;
+  box-shadow: 2px 2px 5px #ccc;
+}
+
+.last-1 {
+  width: 1190px;
+  height: 352px;
+  background-color: #eee;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-right: 164.6px;
+}
+
+.last-1 li {
+  zoom: 1;
+  overflow: hidden;
+  width: 386px;
+  height: 176px;
+  padding: 28px;
+  margin-right: 16px;
+  background-color: #FFF;
+  float: left;
+}
+
+.last-1 li .info {
+  width: 184px;
+  margin-left: 15px;
+  line-height: 20px;
+  color: #666;
+  float: left;
+}
+
+.last-1 li .info .name {
+  font-size: 14px;
+  overflow: hidden;
+  height: 20px;
+  width: 200px;
+}
+
+.last-1 li .info .name .fix {
+  color: #ea0406;
+  padding-left: 6px;
+  margin-left: 6px;
+  font-family: Arial;
+  border-left: 1px solid #DDD;
+}
+
+.last-1 li .info .text {
+  line-height: 20px;
+  color: #666;
+  height: 81px;
+  font-size: 12px;
+}
+
+.last-1 li .info .text-1 {
+  color: #999;
+  font-size: 12px;
+}
+
+.last-1 li a {
+  text-decoration: none;
+  color: #666;
+}
+
+.last-1 li a img {
+  height: 130px;
+  width: 130px;
+  float: left;
+}
+
+.last-1 li:nth-child(3) {
+  margin-right: 0;
+}
+
+.last-1 li:nth-child(6) {
+  margin-right: 0;
+}
+
+.last-1 li:hover {
+  margin-top: -4px;
+  transition: all 1s;
+  box-shadow: 2px 2px 5px #ccc;
+}
+
+.dota-02 {
+  width: 1519px;
+  height: 530px;
+  background-color: #f5f5f5;
+}
+
+.dota-02 .title-main {
+  width: 1190px;
+  height: 96.5px;
+  margin: a auto;
+}
+
+.dota-02 .title-main .f-left {
+  line-height: 96.5px;
+  float: left;
+  font-size: 28px;
+  margin-left: 164.6px;
+}
+
+.about {
+  padding: 23px 0 40px;
+  background-color: #FFF;
+  margin-top: 40px;
+  height: 329.2px;
+}
+
+.about .wrap-01 {
+  width: 1190px;
+  margin: 0 auto;
+  height: 266.2px;
+  margin-top: -30px;
+}
+
+.about .wrap-01 .link {
+  width: 1190px;
+  height: 201.2px;
+  padding-top: 40px;
+  border-top: 1px solid #e9e9e9;
+}
+
+.about .wrap-01 .link .right-01 {
+  min-height: 115px;
+  width: 227px;
+  padding-left: 67px;
+  border-left: 1px solid #e9e9e9;
+  float: right;
+  margin-right: 60px;
+}
+
+.about .wrap-01 .link .right-01 .p1 {
+  font-size: 24px;
+  font-family: Arial;
+}
+
+.about .wrap-01 .link .right-01 .p2 {
+  padding: 10px 0 24px 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.about .wrap-01 .link .right-01 .hre {
+  display: block;
+  width: 154px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #ea0f1f;
+  font-size: 16px;
+  border: 1px solid #ff5353;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-top: -18px;
+}
+
+.about .wrap-01 .link .right-01 .hre span {
+  background: url(../img/11.png) no-repeat -188px 0;
+  display: inline-block;
+  width: 18px;
+  height: 15px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.about .wrap-01 .link .right-01 .ju {
+  color: #474747;
+  text-decoration: none;
+  text-indent: 50px;
+  display: inline-block;
+  font-size: 14px;
+  padding: 16px 0 0;
+}
+
+.about .wrap-01 .link ul {
+  float: left;
+  width: 298px;
+  text-indent: 110px;
+}
+
+.about .wrap-01 .link ul li {
+  height: 25px;
+  float: left;
+}
+
+.about .wrap-01 .link ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #999;
+}
+
+.about .wrap-01 .link ul dl {
+  height: 15px;
+  font-size: 14px;
+}
+
+.about .wrap-01 .ck {
+  margin-bottom: 20px;
+  width: 1190px;
+  height: 45px;
+}
+
+.about .wrap-01 .ck li {
+  width: 297px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  border-right: 1px solid #e9e9e9;
+  color: #999;
+  float: left;
+}
+
+.about .wrap-01 .ck li .one {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+  background: url(../img/160.png) no-repeat;
+  vertical-align: middle;
+}
+
+.about .wrap-01 .ck li .two {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+  background: url(../img/160.png) no-repeat -45px 0;
+  vertical-align: middle;
+}
+
+.about .wrap-01 .ck li .tre {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+  background: url(../img/160.png) no-repeat -90px 0;
+  vertical-align: middle;
+}
+
+.about .wrap-01 .ck li .four {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+  background: url(../img/160.png) no-repeat -135px 0;
+  vertical-align: middle;
+}
+
+.about .link ul li:hover a {
+  color: red;
+}
+
+.about .right-01 .hre:hover {
+  background-color: #f52525;
+}
+
+.about .right-01 .hre:hover b {
+  color: #fff;
+}
+
+.copy {
+  width: 100%;
+  height: 181.2px;
+  background-color: #e9e9e9;
+  padding: 25px 0 30px 0;
+  text-align: center;
+}
+
+.copy .wrap-03 {
+  width: 1190px;
+  height: 126.2px;
+  margin: 0 auto;
+}
+
+.copy .wrap-03 ul {
+  margin: 0 auto;
+  zoom: 1;
+  overflow: hidden;
+  width: 825px;
+}
+
+.copy .wrap-03 ul li {
+  float: left;
+  width: 70px;
+  text-align: center;
+  height: 12px;
+  line-height: 12px;
+  border-right: 1px solid #DDD;
+  text-align: center;
+  margin-right: -1px;
+}
+
+.copy .wrap-03 ul li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 12px;
+}
+
+.copy .wrap-03 .text-01 {
+  padding: 24px 0 15px 0;
+  color: #999;
+  font-size: 12px;
+  margin-top: -13px;
+}
+
+.copy .wrap-03 .text-01 a {
+  text-decoration: none;
+  color: #666;
+}
+
+.last-m {
+  margin-top: -15px;
+}
+
+.last-m a {
+  margin: 0 3px;
+}
+
+.wrap-03 ul li:hover a {
+  color: red;
 }
