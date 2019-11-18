@@ -59,6 +59,7 @@
 
 .box .box2 span a {
   color: #ccc;
+  text-decoration: none;
 }
 
 .box .box2 b {
@@ -67,6 +68,7 @@
 
 .box .box2 b a {
   color: #ccc;
+  text-decoration: none;
 }
 
 .box .box3 {
@@ -85,6 +87,7 @@
 .box .box3 strong a {
   color: #ccc;
   list-style: none;
+  text-decoration: none;
 }
 
 .box .box3 b {
@@ -93,6 +96,7 @@
 
 .box .box3 b a {
   color: #ccc;
+  text-decoration: none;
 }
 
 .box .box4 {
@@ -112,6 +116,7 @@
   font-size: 12px;
   font-family: "Microsoft YaHei", Verdana, Geneva, sans-serif, \5b8b\4f53;
   display: block;
+  text-decoration: none;
 }
 
 .box .box4 a .right {

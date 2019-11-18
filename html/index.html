@@ -10,13 +10,65 @@
     <link rel="stylesheet" href="../css/show.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="../require/node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="../jqueryRegisteredlogin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../jqueryRegisteredlogin/css/login.css" />
+    <!-- <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script> -->
+    <script src="../jqueryRegisteredlogin/bootstrap/js/bootstrap.js"></script>
+    <script src="../jqueryRegisteredlogin/js/jquery-3.3.1.min.js"></script>
 
 
+    <script>
+        $(document).ready(function() {
+            //打开会员登录 
+            $("#btn").click(function() {
 
+                $("#regist_container").hide();
+                $("#_close").show();
+                $("#_start").animate({
+                    left: '350px',
+                    height: '500px',
+                    width: '1000px'
+                }, 500, function() {
+                    $("#login_container").show(500);
+                    $("#_close").animate({
+                        height: '40px',
+                        width: '40px'
+                    }, 500);
+                });
+            });
+
+
+            //关闭
+            $("#_close").click(function() {
+
+                $("#_close").animate({
+                    height: '0px',
+                    width: '0px'
+                }, 500, function() {
+                    $("#_close").hide(500);
+                    $("#login_container").hide(500);
+                    $("#regist_container").hide(500);
+                    $("#_start").animate({
+                        left: '0px',
+                        height: '0px',
+                        width: '0px'
+                    }, 500);
+                });
+            });
+            //去 注册
+
+            //去 登录
+            $("#toLogin").click(function() {
+                $("#regist_container").hide(500);
+                $("#login_container").show(500);
+            });
+        });
+    </script>
 
 </head>
 
 <body>
+
     <header>
         <div class="right1">
             <div class="right-1">
@@ -49,9 +101,9 @@
                 </div>
                 <a href=""></a>
             </div>
-            <div class="right-6 right-btn">
+            <!-- <div class="right-6 right-btn">
                 <a href="javascpipt:;"></a>
-            </div>
+            </div> -->
 
         </div>
         <div class="box">
@@ -62,7 +114,7 @@
                     </span>
                 </div>
                 <div class="box2">
-                    <span><a href="">登陆</a></span>
+                    <span><a href="javascript:;" id="btn">登陆</a></span>
                     <i>|</i>
                     <b><a href="">注册</a></b>
                 </div>
@@ -94,7 +146,7 @@
                     </div>
                     <div class="p4">
                         <div class="pp4">
-                            <span class="glyphicon glyphicon-menu-hamburger abb"></span>
+                            <span class="glyphicon glyphicon-menu-hamburger abb" style="margin-top: -5px; margin-left: -3px;"></span>
                             <p><a href="">全部商品</a>
 
                             </p>
@@ -659,26 +711,107 @@
 
                     ©完美世界 版权所有　Perfect World. All Rights Reserved.
                 </p>
-                <div class="last-m">
+                <div>
                     <a href=""><img src="../img/160.jpg" alt=""></a>
                     <a href=""><img src="../img/161.jpg" alt=""></a>
                     <a href=""><img src="../img/162.jpg" alt=""></a>
                     <a href=""><img src="../img/163.jpg" alt=""></a>
-                    <a href=""><img src="../img/164.jpg" alt=""></a>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js "></script>
-    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js "></script>
-    <script>
-        $('.carousel').carousel({
-            interval: 2000
-        })
-    </script>
+    <div id='_start' style="z-index: 20000; position:absolute; top: 100px; right: 800px;">
+        <div id='_close' style="display: none;">
+            <span class="glyphicon glyphicon-remove"></span>
+        </div>
+        <br />
+        <!--登录框-->
+        <div id="login_container">
+            <div style="float: left; position: absolute; left: 80px; top: 200px;">
+                <h4 style="position: absolute; top: -50px;left: 45px;">二维码登陆</h4>
+                <img src="../img/0013.png" alt="">
+                <p>使用完美手机令牌扫描二维码</p>
+            </div>
+            <div id="lab1">
+                <span id="lab_login">会员登录</span>
 
+            </div>
+            <div style="width:330px;">
+                <span id="lab_type1">手机号/账号登陆</span>
+            </div>
+            <div id="form_container1">
+                <br />
+                <input type="text" class="form-control" placeholder="手机号/用户名" id="login_number" />
+                <input type="password" class="form-control" placeholder="密码" id="login_password" />
+                <input type="button" value="登录" class="btn btn-success" id="login_btn" />
+                <span id="rememberOrfindPwd">
+                            <span>
+                                <input id="remember" type="checkbox" style="margin-bottom: -1.5px;"/>
+                            </span>
+                <span style="color:#000000">
+                                记住密码&emsp;&emsp;&emsp;&emsp;
+                            </span>
+                <span style="color:#000000">
+                                忘记密码
+                            </span>
+                </span>
+            </div>
+
+            <div style="display:block;width:330px;height:40px;">
+                <span id="lab_type2">使用第三方直接登陆</span>
+            </div>
+            <div style="width:330px;height:100px;border-bottom: 1px solid #FFFFFF;">
+                <br />
+                <button id="login_QQ" type="button" class="btn btn-info">
+                            <img src="../img/qq32.png" style="width:20px;margin-top:-4px;" />&emsp;QQ登录
+                        </button>
+                <button id="login_WB" type="button" class="btn btn-danger">
+                            <img src="../img/sina32.png" style="width:20px;margin-top:-4px;" />&emsp;微博登录
+                        </button>
+            </div>
+        </div>
+        <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js "></script>
+        <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js "></script>
+        <script>
+            $('.carousel').carousel({
+                interval: 2000
+            })
+        </script>
+        <script type="text/javascript">
+            var clock = '';
+            var nums = 30;
+            var btn;
+
+            function sendCode(thisBtn) {
+                btn = thisBtn;
+                btn.disabled = true; //将按钮置为不可点击
+                btn.value = '重新获取（' + nums + '）';
+                clock = setInterval(doLoop, 1000); //一秒执行一次
+            }
+
+            function doLoop() {
+                nums--;
+                if (nums > 0) {
+                    btn.value = '重新获取（' + nums + '）';
+                } else {
+                    clearInterval(clock); //清除js定时器
+                    btn.disabled = false;
+                    btn.value = '点击发送验证码';
+                    nums = 10; //重置时间
+                }
+            }
+
+            $(document).ready(function() {
+                $("#login_QQ").click(function() {
+                    alert("暂停使用！");
+                });
+                $("#login_WB").click(function() {
+                    alert("暂停使用！");
+                });
+            });
+        </script>
 </body>
 
 </html>
