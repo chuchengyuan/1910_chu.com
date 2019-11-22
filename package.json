@@ -14,5 +14,13 @@
   "dependencies": {
     "jquery": "^3.4.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuchengyuan/1910_chu.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chuchengyuan/1910_chu.com/issues"
+  },
+  "homepage": "https://github.com/chuchengyuan/1910_chu.com#readme",
   "description": ""
 }

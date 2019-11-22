@@ -8,21 +8,27 @@ define(['jquery'], function($) {
                 type: 'get',
                 dataType: 'json',
                 success: function(res) {
+
                     let temp = '';
                     res.forEach(elm => {
                         let pic = JSON.parse(elm.pic);
                         temp += `
+                     
                         <div class="list-1">
-
-                        <a href=""><img src="${pic[0].src}" alt=""></a>
+                      
+                        <a href="http://127.0.0.1:8080/xianmu/html/pages.html?id=${elm.id}"><img class="lazy" data-original="${pic[0].src}" alt=""></a>
                         <p>${elm.title}</p>
                         <p class="p1">¥${(elm.price)}.00
 
                         </p>
+                      
                 </div>
                     `;
                     });
                     $('.list').append(temp);
+                    jQuery("img.lazy").lazyload({
+                        effect: "fadeIn"
+                    });
                 }
             })
         },
@@ -45,7 +51,7 @@ define(['jquery'], function($) {
                             <span></span>
                             <font>${elm.help}</font>
                         </a>
-                        <a href="" class="pan"><img src="${pic[0].src}" alt=""></a>
+                        <a href="http://127.0.0.1:8080/xianmu/html/pages.html?id=${elm.id}" class="pan"><img class="lazy" data-original="${pic[0].src}" alt=""></a>
                         <p class="name">${elm.title}</p>
                         <p class="pri-01">
                             ￥${elm.price}.00
@@ -63,6 +69,9 @@ define(['jquery'], function($) {
                     `;
                     });
                     $('.list-03').append(temp01);
+                    jQuery("img.lazy").lazyload({
+                        effect: "fadeIn"
+                    });
                 }
             })
         },
@@ -79,6 +88,7 @@ define(['jquery'], function($) {
                         console.log(pic);
                         temp02 += `
                         <div class="list-02">
+                      
                         <p class="yuan">
                             <span>${elm.dis}</span> 折
                         </p>
@@ -86,7 +96,7 @@ define(['jquery'], function($) {
                             <span></span>
                             <font>${elm.help}</font>
                         </a>
-                        <a href="" class="pan"><img src="${pic[0].src}" alt=""></a>
+                        <a href="http://127.0.0.1:8080/xianmu/html/pages.html?id=${elm.id}" class="pan"><img class="lazy" data-original="${pic[0].src}" alt=""></a>
                         <p class="name">${elm.title}</p>
                         <p class="pri-01">
                             ￥${elm.price}.00
@@ -96,14 +106,17 @@ define(['jquery'], function($) {
                         <a href="" class="star"></a>
                         <a href="" class="btn">
                             <span></span> 加入购物车
-                        </a>
-        
+                      
+        </a>
                     </div>
                 </div>
             
                     `;
                     });
                     $('.list-04').append(temp02);
+                    jQuery("img.lazy").lazyload({
+                        effect: "fadeIn"
+                    });
                 }
             })
         },
@@ -120,7 +133,7 @@ define(['jquery'], function($) {
                         console.log(pic);
                         temp03 += `
                         <div class="list-02">
-                        <a href="" class="pan"><img src="${pic[0].src}" alt=""></a>
+                        <a href="http://127.0.0.1:8080/xianmu/html/pages.html?id=${elm.id}" class="pan"><img class="lazy" data-original="${pic[0].src}" alt=""></a>
                         <p class="name">${elm.title}</p>
                         <p class="pri-01">
                             ￥${elm.price}.00
@@ -132,6 +145,9 @@ define(['jquery'], function($) {
                     `;
                     });
                     $('.list-05').append(temp03);
+                    jQuery("img.lazy").lazyload({
+                        effect: "fadeIn"
+                    });
                 }
             })
 
@@ -149,7 +165,7 @@ define(['jquery'], function($) {
                         temp05 += `
                         <div class="list-1">
 
-                        <a href=""><img src="${pic[0].src}" alt=""></a>
+                        <a href="http://127.0.0.1:8080/xianmu/html/pages.html?id=${elm.id}"><img class="lazy" data-original="${pic[0].src}" alt=""></a>
                         <p>${elm.title}</p>
                         <p class="p1">¥${(elm.price)}.00
 
@@ -159,6 +175,9 @@ define(['jquery'], function($) {
                     `;
                     });
                     $('.list-06').append(temp05);
+                    jQuery("img.lazy").lazyload({
+                        effect: "fadeIn"
+                    });
                 }
             })
         }

@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- <script src="../js/require.js" data-main="../js/app.js">
+    </script> -->
+    <!-- <script src="../js/cookie.js"></script> -->
     <script src="../js/require.js" data-main="../js/main.index.js"></script>
+
+
+
+
     <link rel="stylesheet" href="../css/show.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="../require/node_modules/jquery/dist/jquery.min.js"></script>
@@ -55,7 +62,6 @@
                     }, 500);
                 });
             });
-            //去 注册
 
             //去 登录
             $("#toLogin").click(function() {
@@ -116,7 +122,7 @@
                 <div class="box2">
                     <span><a href="javascript:;" id="btn">登陆</a></span>
                     <i>|</i>
-                    <b><a href="">注册</a></b>
+                    <b><a href="./regist.html">注册</a></b>
                 </div>
                 <div class="box3">
                     <strong><a href="">我的订单</a></strong>
@@ -230,9 +236,9 @@
         </div>
         <div class="photo ">
             <div class="photo-01 ">
-                <a href=" "><img src="../img/001.jpg " alt=" "></a>
-                <a href=" "><img src="../img/002.jpg " alt=" "></a>
-                <a href=" "><img src="../img/003.jpg " alt=" "></a>
+                <a href=" "><img class="lazy" data-original="../img/001.jpg " alt=" "></a>
+                <a href=" "><img class="lazy" data-original="../img/002.jpg " alt=" "></a>
+                <a href=" "><img class="lazy" data-original="../img/003.jpg " alt=" "></a>
             </div>
 
         </div>
@@ -248,7 +254,7 @@
             <div class="wrap-1 ">
                 <div class="title-main ">
                     <p class="f-left ">
-                        <span><img src="../img/100.jpg " alt=" "></span> Dota2神秘商店
+                        <span><img class="lazy" data-original="../img/100.jpg " alt=" "></span> Dota2神秘商店
                     </p>
                     <a href=" " class="a-1">Dota2周边推荐
                             <p></p>
@@ -261,9 +267,9 @@
                                     </a>
                 </div>
                 <div class="dota-2">
-                    <div class="left-pho"><img src="../img/101.jpg" alt=""></div>
+                    <div class="left-pho"><img class="lazy" data-original="../img/101.jpg" alt=""></div>
                     <div class="main">
-                        <div class="img01"><img src="../img/102.jpg" alt=""></div>
+                        <div class="img01"><img class="lazy" data-original="../img/102.jpg" alt=""></div>
                         <div class="list">
                             <!-- <div class="list-1"> -->
 
@@ -284,7 +290,7 @@
             <div class="wrap-1 ">
                 <div class="title-main ">
                     <p class="f-left ">
-                        <span><img src="../img/100.jpg " alt=" "></span> 电竞外设专区
+                        <span><img class="lazy" data-original="../img/100.jpg " alt=" "></span> 电竞外设专区
                     </p>
 
                     <a href=" " class="a-2">
@@ -295,7 +301,7 @@
                                     </a>
                 </div>
                 <div class="dota-2">
-                    <div class="left-pho"><img src="../img/110.jpg" alt=""></div>
+                    <div class="left-pho"><img class="lazy" data-original="../img/110.jpg" alt=""></div>
                     <div class="main">
                         <div class="list-03">
                             <!-- <div class="list-02"> -->
@@ -323,7 +329,7 @@
             <div class="wrap-1 ">
                 <div class="title-main ">
                     <p class="f-left ">
-                        <span><img src="../img/100.jpg " alt=" "></span> 完美世界游戏周边
+                        <span><img class="lazy" data-original="../img/100.jpg " alt=" "></span> 完美世界游戏周边
                     </p>
 
                     <a href=" " class="a-2">
@@ -334,7 +340,7 @@
                                     </a>
                 </div>
                 <div class="dota-2">
-                    <div class="left-pho"><img src="../img/120.jpg" alt=""></div>
+                    <div class="left-pho"><img class="lazy" data-original="../img/120.jpg" alt=""></div>
                     <div class="main">
                         <div class="list-04">
                             <!-- <div class="list-02"> -->
@@ -361,7 +367,7 @@
             <div class="wrap-1 ">
                 <div class="title-main ">
                     <p class="f-left ">
-                        <span><img src="../img/100.jpg " alt=" "></span> CSGO正版周边
+                        <span><img class="lazy" data-original="../img/100.jpg " alt=" "></span> CSGO正版周边
                     </p>
 
                     <a href=" " class="a-2">
@@ -372,7 +378,7 @@
                                     </a>
                 </div>
                 <div class="dota-2">
-                    <div class="left-pho"><img src="../img/130.jpg" alt=""></div>
+                    <div class="left-pho"><img class="lazy" data-original="../img/130.jpg" alt=""></div>
                     <div class="main">
                         <div class="list-05">
                             <!-- <div class="list-02"> -->
@@ -400,7 +406,7 @@
             <div class="wrap-1 ">
                 <div class="title-main ">
                     <p class="f-left ">
-                        <span><img src="../img/100.jpg " alt=" "></span>姜小虎周边专区
+                        <span><img class="lazy" data-original="../img/100.jpg " alt=" "></span>姜小虎周边专区
                     </p>
 
                     <a href=" " class="a-2">
@@ -411,7 +417,7 @@
                                     </a>
                 </div>
                 <div class="dota-2">
-                    <div class="left-pho"><img src="../img/140.jpg" alt=""></div>
+                    <div class="left-pho"><img class="lazy" data-original="../img/140.jpg" alt=""></div>
                     <div class="main">
                         <div class="img01" style="z-index: 200; float: left; margin-top: 9px;margin-right: 15px;">
 
@@ -427,13 +433,13 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner " role="listbox " style="width: 467px;height: 300px;">
                                         <div class="item active ">
-                                            <img src="../img/141.jpg " alt="... " style="height: 300px; ">
+                                            <img class="lazy" data-original="../img/141.jpg " alt="... " style="height: 300px; ">
                                             <div class="carousel-caption ">
 
                                             </div>
                                         </div>
                                         <div class="item ">
-                                            <img src="../img/142.jpg " alt="... " style="height: 300px; ">
+                                            <img class="lazy" data-original="../img/142.jpg " alt="... " style="height: 300px; ">
                                             <div class="carousel-caption ">
 
                                             </div>
@@ -465,7 +471,7 @@
             <div class="wrap-1 ">
                 <div class="title-main ">
                     <p class="f-left ">
-                        <span><img src="../img/150.png " alt=" "></span> 玩家热评
+                        <span><img class="lazy" data-original="../img/150.png " alt=" "></span> 玩家热评
                     </p>
 
 
@@ -473,7 +479,7 @@
                 <ul class="last-1">
                     <li>
                         <a href="">
-                            <img src="../img/151.jpg" alt="">
+                            <img class="lazy" data-original="../img/151.jpg" alt="">
                             <div class="info">
                                 <div class="text">
                                     东西十分给力，快递也十分给力 带出去很多人羡慕不已！
@@ -493,7 +499,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <img src="../img/152.jpg" alt="">
+                            <img class="lazy" data-original="../img/152.jpg" alt="">
                             <div class="info">
                                 <div class="text">
                                     他很喜欢。
@@ -513,7 +519,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <img src="../img/153.jpg" alt="">
+                            <img class="lazy" data-original="../img/153.jpg" alt="">
                             <div class="info">
                                 <div class="text">
                                     不错
@@ -533,7 +539,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <img src="../img/154.jpg" alt="">
+                            <img class="lazy" data-original="../img/154.jpg" alt="">
                             <div class="info">
                                 <div class="text">
                                     棒棒哒~
@@ -553,7 +559,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <img src="../img/152.jpg" alt="">
+                            <img class="lazy" data-original="../img/152.jpg" alt="">
                             <div class="info">
                                 <div class="text">
                                     66666
@@ -573,7 +579,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <img src="../img/155.jpg" alt="">
+                            <img class="lazy" data-original="../img/155.jpg" alt="">
                             <div class="info">
                                 <div class="text">
                                     杯子很大很沉 出乎意料的好
@@ -712,10 +718,10 @@
                     ©完美世界 版权所有　Perfect World. All Rights Reserved.
                 </p>
                 <div>
-                    <a href=""><img src="../img/160.jpg" alt=""></a>
-                    <a href=""><img src="../img/161.jpg" alt=""></a>
-                    <a href=""><img src="../img/162.jpg" alt=""></a>
-                    <a href=""><img src="../img/163.jpg" alt=""></a>
+                    <a href=""><img class="lazy" data-original="../img/160.jpg" alt=""></a>
+                    <a href=""><img class="lazy" data-original="../img/161.jpg" alt=""></a>
+                    <a href=""><img class="lazy" data-original="../img/162.jpg" alt=""></a>
+                    <a href=""><img class="lazy" data-original="../img/163.jpg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -729,7 +735,7 @@
         <div id="login_container">
             <div style="float: left; position: absolute; left: 80px; top: 200px;">
                 <h4 style="position: absolute; top: -50px;left: 45px;">二维码登陆</h4>
-                <img src="../img/0013.png" alt="">
+                <img class="lazy" data-original="../img/0013.png" alt="">
                 <p>使用完美手机令牌扫描二维码</p>
             </div>
             <div id="lab1">
@@ -741,9 +747,9 @@
             </div>
             <div id="form_container1">
                 <br />
-                <input type="text" class="form-control" placeholder="手机号/用户名" id="login_number" />
-                <input type="password" class="form-control" placeholder="密码" id="login_password" />
-                <input type="button" value="登录" class="btn btn-success" id="login_btn" />
+                <input type="text" class="form-control" placeholder="手机号/用户名" id="username" name="username" />
+                <input type="password" class="form-control" placeholder="密码" id="password" name="password" />
+                <input type="button" value="登录" class="reg btn btn-success" id="login_btn" />
                 <span id="rememberOrfindPwd">
                             <span>
                                 <input id="remember" type="checkbox" style="margin-bottom: -1.5px;"/>
@@ -812,6 +818,20 @@
                 });
             });
         </script>
+
+        <script src="../tuupola-jquery_lazyload/jquery-1.11.0.min.js"></script>
+        <script src="../tuupola-jquery_lazyload/jquery.lazyload.min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(function() {
+                $("img.lazy").lazyload({
+                    effect: "fadeIn"
+                });
+            });
+        </script>
+
+
 </body>
+
+
 
 </html>
